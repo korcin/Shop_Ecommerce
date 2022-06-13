@@ -1,72 +1,77 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Container = styled.div`
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/register.jpg") center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.5)
+		),
+		url("images/register.jpg") center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
 
 const Wrapper = styled.div`
-    width: 40%;
-    padding: 20px;
-    background-color: #fff;
-`
+	width: 40%;
+	padding: 20px;
+	background-color: #fff;
+`;
 
 const Title = styled.h1`
-    font-size: 24px;
-    font-weight: 300;
-`
+	font-size: 24px;
+	font-weight: 300;
+`;
 
 const Form = styled.form`
-    display: flex;
-    flex-wrap: wrap;
-`
+	display: flex;
+	flex-wrap: wrap;
+`;
 
 const Input = styled.input`
-    flex: 1;
-    min-width: 40%;
-    margin: 20px 10px 0px 0px;
-    padding: 10px;
-`
+	flex: 1;
+	min-width: 40%;
+	margin: 20px 10px 0px 0px;
+	padding: 10px;
+`;
 
 const Agreement = styled.span`
-    font-size: 12px;
-    margin: 20px 0px;
-`
+	font-size: 12px;
+	margin: 20px 0px;
+`;
 
 const Button = styled.button`
-    width: 40%;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-   background-color: #91baa0;
-   color: white;
-`
+	width: 40%;
+	border: none;
+	padding: 15px 20px;
+	cursor: pointer;
+	background-color: #91baa0;
+	color: white;
+`;
 
 const Register = () => {
-  return (
-    <Container>
-        <Wrapper>
-            <Title>ZAREJESTRUJ SIĘ</Title>
-            <Form>
-                <Input placeholder="Imię"/>
-                <Input placeholder="Nazwisko"/>
-                <Input placeholder="Nazwa użytkownika"/>
-                <Input placeholder="E-mail"/>
-                <Input placeholder="Hasło"/>
-                <Input placeholder="Potwierdź hasło"/>
-                <Agreement>
-                    Zakładając konto wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z <b>POLITYKĄ PRYWATNOŚCI</b>
-                </Agreement>
-                <Button>STWÓRZ</Button>
-            </Form>
-        </Wrapper>
-    </Container>
-  )
-}
+	return (
+		<Container>
+			<Wrapper>
+				<Title>ZAREJESTRUJ SIĘ</Title>
+				<Form>
+					<Input placeholder="Imię" />
+					<Input placeholder="Nazwisko" />
+					<Input placeholder="Nazwa użytkownika" />
+					<Input placeholder="E-mail" />
+					<Input type="password" placeholder="Hasło" />
+					<Input type="password" placeholder="Potwierdź hasło" />
+					<Agreement>
+						Zakładając konto wyrażam zgodę na przetwarzanie moich danych
+						osobowych zgodnie z <b>POLITYKĄ PRYWATNOŚCI</b>
+					</Agreement>
+					<Button>STWÓRZ</Button>
+				</Form>
+			</Wrapper>
+		</Container>
+	);
+};
 
-export default Register
+export default Register;
